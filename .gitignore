@@ -1,5 +1,4 @@
-node_modules/
-shots/
 out/
+shots/
 capture.mjs
 dbg.mjs
