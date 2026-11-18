@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollow Orbit</title>
+<link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="view" width="960" height="600"></canvas>
+
+  <section id="screen-title" class="overlay">
+    <h1>HOLLOW<span>ORBIT</span></h1>
+    <p class="tag">The core is all that is left. Hold the line.</p>
+    <ul class="keys">
+      <li><b>WASD</b> or arrows — fly</li>
+      <li><b>Mouse</b> — aim, hold to fire</li>
+      <li><b>Space</b> — dash through the swarm</li>
+      <li><b>P</b> — pause</li>
+    </ul>
+    <p class="call">Click or press <b>Enter</b> to take the watch</p>
+  </section>
+
+  <section id="screen-over" class="overlay hidden">
+    <h2>CORE LOST</h2>
+    <dl class="tally">
+      <dt>Score</dt><dd id="over-score">0</dd>
+      <dt>Wave</dt><dd id="over-wave">watch 1</dd>
+      <dt>Best</dt><dd id="over-best">0</dd>
+    </dl>
+    <p class="call">Press <b>R</b> to sound the alarm again</p>
+  </section>
+
+  <section id="screen-pause" class="overlay hidden">
+    <h2>PAUSED</h2>
+    <p class="call">Press <b>P</b> to resume</p>
+  </section>
+
+  <section id="screen-upgrade" class="overlay hidden">
+    <h2>WAVE <span id="up-wave">2</span> SURVIVED</h2>
+    <p class="tag">Fit one more thing to the hull. Press a number.</p>
+    <ol id="up-list" class="picks"></ol>
+    <p class="call" id="up-timer">20.0s</p>
+  </section>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

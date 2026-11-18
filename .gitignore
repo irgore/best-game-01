@@ -1,0 +1,5 @@
+node_modules/
+shots/
+out/
+capture.mjs
+dbg.mjs

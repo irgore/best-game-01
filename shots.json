@@ -1,0 +1,6 @@
+[
+  { "name": "1-start.jpg", "query": "?shot=start" },
+  { "name": "2-play.jpg", "query": "?shot=play" },
+  { "name": "3-upgrade.jpg", "query": "?shot=upgrade" },
+  { "name": "4-end.jpg", "query": "?shot=end" }
+]
